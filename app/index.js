@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import $ from '$query'
+import $ from 'jquery'
 function component () {
   //var element = document.createElement('div');
   var element = $('<div></div>');
