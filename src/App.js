@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import 'normalize.css'
-import './reset.css'
-import TodoInput from './TodoInput'
-import TodoItem from './TodoItem'
+import 'normalize.css';
+import './reset.css';
+import TodoInput from './TodoInput';
+import TodoItem from './TodoItem';
 class App extends Component {
   constructor(props) {
     super(props)
