@@ -27,8 +27,9 @@ class App extends Component {
       })
 
     return (
+      <div className="Ct">
       <div className="App">
-        <h1>我的待办</h1>
+        <h1>待办事项</h1>
         <div className="inputWrapper">
           <TodoInput content={this.state.newTodo}
             onChange={this.changeTitle.bind(this)}
@@ -37,6 +38,7 @@ class App extends Component {
         <ol className="todoList">
           {todos}
         </ol>
+      </div>
       </div>
     )
   }

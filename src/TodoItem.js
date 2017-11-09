@@ -4,10 +4,15 @@ export default class TodoItem extends Component {
     render() {
         return (
             <div className="TodoItem">
-                <input type="checkbox" checked={this.props.todo.status === 'completed'}
-                    onChange={this.toggle.bind(this)} />
+                <label>
+                    <input className="checkbox" type="checkbox" checked={this.props.todo.status === 'completed'}
+                        onChange={this.toggle.bind(this)} />
+                    <div className="track-switch">
+                        <div className="handle"></div>
+                    </div>
+                </label>
                 <span className="title">{this.props.todo.title}</span>
-                <button onClick={this.delete.bind(this)}>删除</button>
+                <button className="button button-khaki" onClick={this.delete.bind(this)}>delete</button>
             </div>
         )
     }
